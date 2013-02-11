@@ -1,0 +1,10 @@
+inherit rubygem
+
+NAME="ruby-activerecord"
+VERSION=3.2.11
+RELEASE=1
+CATEGORY="Ruby"
+SUMMARY="Ruby Active Record extension"
+DESCRIPTION="Databases on Rails. Build a persistent domain model by mapping
+database tables to Ruby classes. Strong conventions for associations,
+validations, aggregations, migrations, and testing come baked-in."
