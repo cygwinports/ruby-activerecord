@@ -1,10 +1,16 @@
 inherit rubygem
 
 NAME="ruby-activerecord"
-VERSION=3.2.14
+VERSION=4.0.9
 RELEASE=1
 CATEGORY="Ruby"
 SUMMARY="Ruby Active Record extension"
 DESCRIPTION="Databases on Rails. Build a persistent domain model by mapping
 database tables to Ruby classes. Strong conventions for associations,
 validations, aggregations, migrations, and testing come baked-in."
+
+ARCH=noarch
+
+PKG_NAMES="${NAME} ${NAME}-doc"
+ruby_activerecord_CONTENTS="--exclude=examples ${RUBYGEM_INSTDIR#/} ${RUBYGEM_SPEC#/}"
+ruby_activerecord_doc_CONTENTS="${RUBYGEM_DOCDIR#/} ${RUBYGEM_INSTDIR#/}/examples/"
