@@ -1,15 +1,13 @@
 inherit rubygem
 
 NAME="ruby-activerecord"
-VERSION=4.2.5.2
-RELEASE=2
+VERSION=5.1.4
+RELEASE=1
 CATEGORY="Ruby"
 SUMMARY="Ruby Active Record extension"
 DESCRIPTION="Databases on Rails. Build a persistent domain model by mapping
 database tables to Ruby classes. Strong conventions for associations,
 validations, aggregations, migrations, and testing come baked-in."
-
-PATCH_URI="http://pkgs.fedoraproject.org/cgit/rpms/rubygem-activerecord.git/plain/rubygem-activerecord-4.2.7.1-CVE-2016-6317-unsafe-query.patch?h=f24"
 
 ARCH=noarch
 
